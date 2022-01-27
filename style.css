@@ -1,8 +1,70 @@
 body {
+    height: 100vh;
     font-family: 'Outfit', sans-serif;
     margin: 0;
-    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: hsl(217, 54%, 11%);
+}
+.card {
+    background-color: hsl(216, 50%, 16%);
+    height: 440px;
+    width: 240px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.nftImage {
+    width: 100%;
+    border-radius: 7px;
+}
+.creatorImage {
+    width: 20px;
+}
+h1 {
+    margin: 0;
+}
+h1 a {
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+}
+p {
+    color: hsl(215, 51%, 70%);
+    font-size: 14.5px;
+    font-weight: 300;
+    line-height: 20px;
+}
+.infoContainer {
+    display: flex;
+    justify-content: space-between;
+}
+.infoContainer2 {
+    display: flex;
+    align-items: center;
+}
+.ethPrice {
+    font-size: 13px;
+    font-weight: 900;
+    color: hsl(178, 100%, 50%);
+}
+.daysLeft {
+    color: hsl(215, 51%, 70%);
+    font-size: 13px;
+    font-weight: 300;
+}
+hr {
+    margin-top: 20px;
+    border: none;
+    border-top: 1px solid hsl(215, 32%, 27%);
+    width: 100%;
+}
+.creatorContainer {
+    display: flex;
+    justify-content: space-between;
+}
+.eye {
+    position: fixed;
 }
