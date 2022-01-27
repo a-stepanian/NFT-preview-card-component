@@ -1,7 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
     height: 100vh;
     font-family: 'Outfit', sans-serif;
-    margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,41 +19,47 @@ body {
     flex-direction: column;
     padding: 20px;
 }
+.nftImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .nftImage {
     width: 100%;
     border-radius: 7px;
-}
-.creatorImage {
-    width: 20px;
-}
-h1 {
-    margin: 0;
 }
 h1 a {
     color: white;
     font-size: 17px;
     text-decoration: none;
+    letter-spacing: .85px;
 }
 p {
+    margin-top: 12px;
     color: hsl(215, 51%, 70%);
     font-size: 14.5px;
     font-weight: 300;
     line-height: 20px;
 }
 .infoContainer {
+    margin-top: 16px;
     display: flex;
     justify-content: space-between;
+    filter: blur(.4px);
 }
 .infoContainer2 {
     display: flex;
     align-items: center;
 }
 .ethPrice {
-    font-size: 13px;
+    font-size: 12.5px;
     font-weight: 900;
+    letter-spacing: .6px;
     color: hsl(178, 100%, 50%);
+    margin-left: 5px;
 }
-.daysLeft {
+.smallText {
+    margin-left: 5px;
     color: hsl(215, 51%, 70%);
     font-size: 13px;
     font-weight: 300;
@@ -62,9 +71,31 @@ hr {
     width: 100%;
 }
 .creatorContainer {
+    margin-top: 12px;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+}
+.creatorImage {
+    width: 23px;
+    border: 1.5px solid white;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.creatorName {
+    color: white;
+    text-decoration: none; 
+}
+.link:hover {
+    color: hsl(178, 100%, 50%);
 }
 .eye {
-    position: fixed;
+    transform: scale(0.75);
+    position: absolute;
+    opacity: 0;
+}
+.nftImg:hover svg{
+    opacity: 1;
+}
+.eth, .clock {
+    transform: scale(0.8);
 }
